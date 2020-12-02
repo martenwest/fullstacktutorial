@@ -20,7 +20,13 @@ export default {
   plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
+  components: {
+    dirs: [
+      { path: '~/components/' },
+      { path: '~/components/form', prefix: 'Form' },
+      { path: '~/components/base', prefix: 'Base' },
+    ],
+  },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
@@ -31,7 +37,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ['@nuxtjs/composition-api'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
