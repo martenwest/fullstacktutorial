@@ -25,15 +25,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from '@nuxtjs/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
+
+import { pizzaForm } from '~/state/pizzaForm'
 
 export default defineComponent({
   setup() {
-    const pizzaForm = ref({
-      name: '',
-      rating: 0,
-    })
-
     return {
       pizzaForm,
     }
