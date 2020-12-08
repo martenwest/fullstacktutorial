@@ -8,18 +8,15 @@
       <base-text-input v-model="pizzaForm.name" />
     </base-label>
 
-    <base-label
-      label="Pizza Rating"
-      message="From 1 to 10 how much do you like pizza?"
-    >
-      <base-number-input v-model="pizzaForm.rating" />
+    <base-label label="Pizza topping" message="What is your favorite topping?">
+      <base-text-input v-model="pizzaForm.topping" />
     </base-label>
 
     <div class="pt-4 border-t border-gray-600">
       <p>Results</p>
 
       <span class="block"> name: {{ pizzaForm.name }} </span>
-      <span class="block"> rating: {{ pizzaForm.rating }} </span>
+      <span class="block"> topping: {{ pizzaForm.topping }} </span>
     </div>
   </div>
 </template>

@@ -15,8 +15,8 @@ import { pizzaForm } from '~/state/pizzaForm'
 export default defineComponent({
   setup() {
     const send = () => {
-      const { name, rating } = pizzaForm.value
-      alert(`${name} rates pizzas a whopping ${rating}`)
+      const { name, topping } = pizzaForm.value
+      alert(`${name}'s favorite topping is ${topping}`)
     }
 
     return { send }
